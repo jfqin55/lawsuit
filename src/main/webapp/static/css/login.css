@@ -1,0 +1,138 @@
+@charset "utf-8";
+body { 
+        margin:0; 
+        padding:0; 
+        background:url(../images/bg.jpg) top center no-repeat;position:relative;
+    } 
+    .wrap { 
+        margin:210px auto; 
+        width:490px; 
+        overflow:hidden; 
+    } 
+    .loginForm { 
+        position:absolute; 
+        z-index:0; 
+        background-color:#FFF; 
+        height:435px; 
+        width:490px; 
+		box-shadow: 0px 2px 2px #999;
+    } 
+    .loginForm:before { 
+        content:''; 
+        position:absolute; 
+        z-index:-1; 
+        top:5px; 
+        bottom:5px; 
+        left:5px; 
+        right:5px; 
+    } 
+    .loginForm h1 { 
+        
+        text-transform:uppercase; 
+        text-align:center; 
+        color:#219bcc; 
+        line-height:3em; 
+        margin:36px 0 10px 0; 
+        letter-spacing: 2px; 
+        font:normal 24px/1 Microsoft YaHei, sans-serif; 
+    } 
+    fieldset { 
+        border:none; 
+		margin-left: 35px;
+		margin-right: 34px;
+        padding:20px 10px 0; 
+		width: 338px;
+    } 
+    fieldset input[type=text] { 
+        background:url(../images/account.jpg) 8px 11px no-repeat; 
+    } 
+    fieldset input[type=password] { 
+        background:url(../images/mim.jpg) 8px 11px no-repeat; 
+    } 
+    fieldset input[type=text], fieldset input[type=password] { 
+        width:304px; 
+        line-height:2em; 
+        font-size:14px; 
+        height:38px; 
+		color: #888888;
+        border:none; 
+        padding-left: 36px;
+    } 
+ .fild2[type=text] { 
+	 background: none; 
+        font-size:14px; 
+        height:38px; 
+        padding-left: 10px;
+	    width: 160px;
+		height: 40px;
+        border-radius:3px; 
+        border:1px solid #CCC; 
+	    float: left;
+	    color: #888888;
+	   
+    } 
+    fieldset input[type=button] { 
+        text-align:center; 
+        padding:2px 20px; 
+        line-height:2em; 
+        border: none;
+        border-radius:3px; 
+        background-color: #209acb;
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF9800', endColorstr='#FF6900'); 
+        -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF9800', endColorstr='#FF6900')"; 
+        height:46px; 
+		width: 338px;
+        cursor:pointer; 
+        letter-spacing: 4px; 
+        margin-left:30px; 
+        color:#FFF; 
+		font-size: 14px;
+        font-weight:bold; 
+    } 
+    fieldset input[type=button]:hover { 
+     
+		background-color: #1b8fbd;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF6900', endColorstr='#FF9800'); 
+        -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF6900', endColorstr='#FF9800')"; 
+    } 
+    .inputWrap { 
+        width: 340px;
+		height: 40px;
+        border-radius:3px; 
+        border:1px solid #CCC; 
+        margin:10px 30px 15px 30px; 
+   
+    } 
+.cwts{ 
+	padding: 10px 10px 0px 75px;
+	font-size: 14px;
+	color: crimson;
+}
+.inputWrap2 { 
+		margin-left:76px;
+    } 
+
+    fieldset input[type=checkbox] { 
+        margin-left:30px; 
+        vertical-align:middle; 
+    } 
+    fieldset a { 
+        color:blue; 
+        font-size:12px; 
+        margin:6px 0 0 10px; 
+        text-decoration:none; 
+    } 
+    fieldset a:hover { 
+        text-decoration:underline; 
+    } 
+    fieldset span { 
+        font-size:12px; 
+    } 
+
+.login-wrapper{background:url( ../images/bg.jpg) top center no-repeat;position:relative;}
+.login-body{width: 490px; height: 455px; background-color: aliceblue;-moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px; 
+background:#FFF; 
+z-index:2;
+behavior: url(iecss3.htc); 
+margin:0 auto; border:1px solid #F00;
+position:absolute;right:400px;top:363px}

@@ -1,0 +1,29 @@
+@charset "utf-8";
+/* CSS Document */  
+.cc{width:100%;position:relative; height:35px; line-height:35px; text-align:center;}
+#swiper-container {height:35px;width:100%;}
+.swiper-pagination-switch{display:inline-block;width:10px;height:10px;border-radius:10px;background:#999;box-shadow:0px 1px 2px #555 inset;margin:0 3px;cursor: pointer;}
+.swiper-slide a{ font-size:18px; color:#166900;}
+.swiper-active-switch{background:#fff;}
+
+
+
+/* 去掉input的边框  开始*/
+.asLabel .mini-textbox-border,
+.asLabel .mini-textbox-input,
+.asLabel .mini-buttonedit-border,
+.asLabel .mini-buttonedit-input,
+.asLabel .mini-textboxlist-border
+{
+    border:0;background:none;cursor:default;
+}
+.asLabel .mini-buttonedit-button,
+.asLabel .mini-textboxlist-close
+{
+    display:none;
+}
+.asLabel .mini-textboxlist-item
+{
+    padding-right:8px;
+} 
+/* 去掉input的边框  结束*/   

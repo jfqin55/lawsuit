@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+	<!-- 控制台输出 -->
+	<appender name="console" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+			<pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+		</encoder>
+	</appender>
+	
+	<!-- 每天生成一个日志文件 -->
+	<appender name="rollingFile" class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>logs/cost.log</file>
+	    <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+			<fileNamePattern>logs/cost.%d{yyyy-MM-dd}.%i.log</fileNamePattern>
+			<!-- 当日志文件超过maxFileSize指定的大小时，根据上面提到的%i进行日志文件滚动，i的值从0开始每次加1 -->
+			<maxFileSize>50MB</maxFileSize>
+			<!-- 保存10年内的日志 -->
+			<maxHistory>3650</maxHistory>
+			<!-- 最多保存1000GB的日志 -->
+			<totalSizeCap>1000GB</totalSizeCap>
+		</rollingPolicy>
+	    <encoder>
+	      	<pattern>%d{HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n</pattern>
+	    </encoder>
+	  </appender>
+	
+	<!-- 针对上面的配置，控制日志输出级别：TRACE、DEBUG、INFO、WARN、ERROR -->
+	<root level="WARN">
+		<appender-ref ref="console" />
+		<appender-ref ref="rollingFile" />
+	</root>
+	
+	<!-- 精确设置每个包下面的日志，打印SQL -->
+<!-- 	<logger name="com.oyk.springboot.mapper" level="DEBUG" /> -->
+	
+</configuration>
